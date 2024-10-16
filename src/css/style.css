@@ -1,11 +1,176 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
+/* General Styles */
+body {
+	font-family: 'Inknut Antiqua', serif;
+	background-color: #a63d3a; /* Dark red background */
+	margin: 0;
+	padding: 20px;
+	color: #fcdcab; /* Light yellow text color */
+}
+
+/* Container Styling */
+.recipe-details-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1100px;
+
+	padding: 40px;
+	background-color: #8b2e2b; /* Slightly darker red for better contrast */
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Content Styling */
+.text-content {
+	width: 55%;
+}
+
+/* Title Styling */
+.title {
+	font-size: 42px;
+	color: #f1d252; /* Light yellow for the title */
+	margin-bottom: 30px;
+}
+
+/* Center the Why It Works Section */
+.center-section {
+	text-align: center;
+	margin: 0 auto;
+	width: 60%;
+	padding: 20px;
+}
+
+/* Recipe Information */
+.recipe-info h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.recipe-info p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+
+/* Ingredients Styling */
+.ingredients h3 {
+	font-size: 28px;
+	color: #fcdcab;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #fcdcab;
+	padding-bottom: 5px;
+	width: fit-content;
+}
+
+.ingredients ul {
+	list-style: none;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #fcdcab;
+}
+
+.ingredients ul li {
+	margin-bottom: 10px;
+}
+
+/* Image Content Styling */
+.image-content {
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-content img {
+	width: 100%;
+	border-radius: 12px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Yellow Box Styling */
+.yellow-box {
+	background-color: #f1d252; /* Yellow background */
+	color: #3d2314; /* Dark text color */
+	padding: 20px;
+	border-radius: 12px;
+	margin: 20px auto;
+	max-width: 80%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.recipe-details-container {
+		 flex-direction: column;
+		 padding: 20px;
+	}
+
+	.text-content,
+	.image-content {
+		 width: 100%;
+	}
+
+	.image-content {
+		 margin-top: 30px;
+	}
+
+	.center-section {
+		 width: 100%;
 	}
 }
 
-@media screen and (width >= 500px) {
-	#some-id {
-		color: red;
+/* Recipe and Step Container Styling */
+.recipe-step-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1200px;
+	margin: 40px auto;
+	gap: 20px; /* Space between columns */
+}
+
+/* Recipe Details Container Styling */
+.recipe-details-container {
+	width: 45%;
+}
+
+/* Step Box Styling */
+.step-box {
+	width: 50%;
+	background-color: #8b2e2b; /* Dark red background */
+	color: #fcdcab; /* Light yellow text color */
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Step Heading Styling */
+.step-box h2 {
+	font-size: 36px;
+	color: #f1d252;
+	margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.recipe-step-container {
+		 flex-direction: column;
 	}
+
+	.recipe-details-container,
+	.step-box {
+		 width: 100%;
+	}
+}
+.directions-images {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+
+}
+.directions-images img {
+	width: 16%;
+	border-radius: 5px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
